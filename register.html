@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/register.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="wrapper">
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              src="https://himvas.com/wp-content/uploads/2023/06/HimVaSCom1.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <label for="mobile-list-checkbox" class="mobile-nav nav__burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <ul class="desktop-nav-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/index.html#speakers">Speakers</a>
+          </li>
+          <li>
+            <a href="/register.html">register</a>
+          </li>
+          <li>
+            <a href="/schedule.html">schedule</a>
+          </li>
+          <li>
+            <a href="/gallary.html">Gallary</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <input type="checkbox" onchange="navToggle()" id="mobile-list-checkbox" />
+    <div class="mobile-list-container">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li>
+          <a href="/index.html#speakers">Speakers</a>
+        </li>
+        <li>
+          <a href="/register.html">register</a>
+        </li>
+        <li>
+          <a href="/schedule.html">schedule</a>
+        </li>
+        <li>
+          <a href="gallary.html">Gallary</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <section id="register">
+      <div class="wrapper">
+        <div class="header">
+          <h1 class="title">Register</h1>
+          <p>
+            Welcome to our platform! We're excited to have you join our event.
+            The instruction of registration is provided below.
+          </p>
+        </div>
+        <div class="main"></div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
