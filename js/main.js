@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
 //   },
 // });
 
-const carouselPages = ["index.html"];
+const carouselPages = ["index.html", ""];
 
 if (carouselPages.includes(window.location.pathname.split("/")[1])) {
   $(".owl-carousel").owlCarousel({
