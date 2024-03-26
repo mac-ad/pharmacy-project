@@ -144,6 +144,10 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+nav ul li a {
+  text-transform: capitalize;
+}
+
 ul.mobile-nav-list li a,
 ul.mobile-nav-list li a {
   text-transform: uppercase;
