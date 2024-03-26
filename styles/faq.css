@@ -1,0 +1,24 @@
+#faq #my-accordion {
+  margin: 0 !important;
+}
+
+#faq > div {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+
+#faq .main {
+  max-width: 700px;
+}
+
+@media only screen and (min-width: 900px) {
+  #faq > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+  }
+
+  #faq > div .header {
+  }
+}

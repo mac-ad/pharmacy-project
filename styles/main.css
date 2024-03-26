@@ -33,13 +33,15 @@ body {
 
   --primary: black;
   --secondary: #f15252;
-  --secondary: rgb(14, 154, 210);
+  --secondary: rgb(16, 121, 163);
+
+  --bg-dark: #0a0a0a;
 
   --white: rgb(220, 220, 220);
   --gray-dark: #151515;
   --gray-dark-2: rgb(16, 15, 15);
 
-  background: #000;
+  background: var(--bg-dark);
 
   font-family: Arial, Helvetica, sans-serif;
   color: var(--white);
@@ -111,7 +113,7 @@ header {
 }
 
 header.scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
 }
 
 header .nav__burger > * {
@@ -317,7 +319,7 @@ a {
 
 .mobile-list-container {
   position: fixed;
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
   bottom: 0;
@@ -435,7 +437,7 @@ section .title:before {
   position: absolute;
   height: 5px;
   border-radius: 5em;
-  width: 20px;
+  width: 50px;
   background: var(--secondary);
   bottom: 0;
   left: 50%;
@@ -472,7 +474,7 @@ section#about {
 #footer {
   background: var(--gray-dark);
   color: var(--white);
-  padding: 2em;
+  padding: 2em 0;
 }
 
 footer {
@@ -580,7 +582,7 @@ footer {
   object-position: center center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   #about .time-and-place svg {
     display: block;
   }
@@ -598,7 +600,11 @@ footer {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
+  body {
+    --nav-height: 10vh;
+  }
+
   [class^="mobile-"] {
     display: none;
   }
