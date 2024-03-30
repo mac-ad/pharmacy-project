@@ -45,13 +45,13 @@ if (carouselPages.includes(window.location.pathname.split("/")[1])) {
       0: {
         items: 1,
       },
-      600: {
+      800: {
         items: 2,
       },
-      800: {
+      1000: {
         items: 3,
       },
-      1000: {
+      1200: {
         items: 4,
       },
     },
