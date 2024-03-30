@@ -111,14 +111,12 @@ const insertHeader = () => {
       <li>
         <a href="/about.html">About</a>
       </li>
-      <li>
-        <a href="/index.html#speakers">Speakers</a>
-      </li>
+      
       <li>
         <a href="/register.html">register</a>
       </li>
       <li>
-      <a href="/index.html#organizing-commitee">Organizing Committee</a>
+      <a href="/events.html">Events</a>
     </li>
       <li>
         <a href="/faq.html">FAQs</a>
@@ -148,15 +146,13 @@ const insertHeader = () => {
     <li>
       <a href="/about.html">About</a>
     </li>
-    <li>
-      <a href="/index.html#speakers">Speakers</a>
-    </li>
+    
     <li>
       <a href="/register.html">register</a>
     </li>
     <li>
-      <a href="/index.html#organizing-commitee">Organizing Committee</a>
-    </li>
+    <a href="/events.html">Events</a>
+  </li>
     <li>
       <a href="/faq.html">FAQs</a>
     </li>

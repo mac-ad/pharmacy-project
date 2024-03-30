@@ -1,10 +1,14 @@
+section#about {
+  padding: 8em 0;
+}
+
 section#about .main {
   margin-top: 2em;
 }
 
 section#about .main {
   display: grid;
-  gap: 0em;
+  gap: 0.5em;
   grid-template-areas:
     "main" "nepal" "ku" "department" "forum"
     "ipsf" "ipsdAsia";
