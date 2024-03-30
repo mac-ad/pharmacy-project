@@ -32,8 +32,10 @@ body {
   --fs-n: 1rem;
 
   --primary: black;
-  --secondary: #f15252;
-  --secondary: rgb(16, 121, 163);
+  --secondary: #c74747;
+  /* --secondary: rgb(16, 121, 163); */
+  /* --secondary-light: rgba(16, 121, 163, 0.445); */
+  --secondary-opacity: rgba(16, 121, 163, 0.137);
 
   --bg-dark: #0a0a0a;
 
@@ -45,7 +47,7 @@ body {
 
   font-family: Arial, Helvetica, sans-serif;
   color: var(--white);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 li {
@@ -446,6 +448,11 @@ section .title:before {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+section .title.small:before {
+  content: "";
+  width: 20px;
 }
 
 section#about {

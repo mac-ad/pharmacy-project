@@ -1,8 +1,24 @@
+.initial-state {
+  opacity: 0;
+  transform: translateY(50px);
+  /* border: 1px solid red; */
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+}
+
 section .header {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  max-width: 50ch;
   /* border: 1px solid red; */
 }
 
@@ -12,12 +28,12 @@ section .header p {
 }
 
 .acc_head {
-  background: #111111 !important;
+  background: var(--secondary) !important;
 }
 
 .acc_content,
 .acc_head {
-  border: 1px solid rgba(255, 255, 255, 0.226);
+  /* border: 1px solid rgba(255, 255, 255, 0.226); */
 }
 
 .accordionjs .acc_section.acc_active > .acc_head {
@@ -30,6 +46,8 @@ section .header p {
 
 .acc_content {
   line-height: 1.5;
+  padding: 1em !important;
+  background: var(--secondary-opacity);
 }
 
 /* .image-with-text {
@@ -48,9 +66,16 @@ section .header p {
 } */
 
 @media only screen and (min-width: 900px) {
-  section .header {
+  /* section .header {
     text-align: left;
+    border: 1px solid red;
   }
+
+  section > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+  } */
 
   section.secondary-page .title:before {
     left: 0;

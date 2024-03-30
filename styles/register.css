@@ -1,0 +1,27 @@
+section#register .main {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+section#register .main .info-container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+section#register .main .info-container p {
+  max-width: 60ch;
+  text-align: center;
+  opacity: 0.8;
+}
+
+section#register .main .info-container ul {
+  opacity: 0.8;
+}
+
+section#register .main .info-container ul li {
+  list-style: circle;
+  margin-left: 2em;
+}

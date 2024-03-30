@@ -1,15 +1,3 @@
-const mobileListItems = document.querySelectorAll(".mobile-nav-list li");
-
-mobileListItems.forEach((item) =>
-  item.addEventListener("click", (e) => {
-    const navToggler = document.querySelector("#mobile-list-checkbox");
-    navToggler.checked = false;
-    const navbar = document.querySelector("header");
-    navbar.classList.remove("opened", "scrolled");
-    document.querySelector("body").style.overflowY = "visible";
-  })
-);
-
 window.addEventListener("scroll", (e) => {
   const navbar = document.querySelector("header");
   if (window.scrollY > 0) {
@@ -34,34 +22,14 @@ window.addEventListener("beforeunload", () => {
 });
 
 window.addEventListener("DOMContentLoaded", (e) => {
-  console.log(window.location.pathname);
-
+  // console.log(window.location.pathname);
+  // animateElement();
   const navBlackPages = ["register.html", "schedule.html"];
 
   if (navBlackPages.includes(window.location.pathname.split("/")[1])) {
     document.querySelector("header").classList.add("scrolled");
   }
 });
-
-// $(".owl-carousel").owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   autoplay: true, // Enable auto-scroll
-//   autoplayTimeout: 5000,
-//   dots: false,
-//   // nav: true,
-//   responsive: {
-//     0: {
-//       items: 1,
-//     },
-//     600: {
-//       items: 1,
-//     },
-//     1000: {
-//       items: 1,
-//     },
-//   },
-// });
 
 const carouselPages = ["index.html", ""];
 
@@ -119,9 +87,7 @@ document.querySelectorAll("button.openvideobutton").forEach((button) => {
 // ]
 
 const insertHeader = () => {
-  console.log("inserting header");
   const container = document.querySelector("body > div .header-container");
-  console.log("container", container);
   container.innerHTML = `
   <header>
   <nav class="wrapper">
@@ -140,7 +106,7 @@ const insertHeader = () => {
     </label>
     <ul class="desktop-nav-list">
       <li>
-        <a href="/">Home</a>
+        <a href="/index.html#home">Home</a>
       </li>
       <li>
         <a href="/about.html">About</a>
@@ -200,6 +166,22 @@ const insertHeader = () => {
   </ul>
 </div>
   `;
+
+  const mobileListItems = document.querySelectorAll(".mobile-nav-list a");
+
+  console.log(mobileListItems);
+
+  mobileListItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      console.log("clicked");
+      const navToggler = document.querySelector("#mobile-list-checkbox");
+      navToggler.checked = false;
+      const navbar = document.querySelector("header");
+      navbar.classList.toggle("opened");
+      navbar.classList.toggle("scrolled");
+      document.querySelector("body").style.overflowY = "visible";
+    });
+  });
 };
 const insertFooter = () => {
   const container = document.querySelector("body section#footer");
@@ -247,3 +229,7 @@ const insertFooter = () => {
 
 insertHeader();
 insertFooter();
+
+const navbar = document.querySelector(".desktop-nav-list");
+
+console.log(navbar);
