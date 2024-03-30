@@ -7,8 +7,7 @@
 section > div {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   justify-content: center;
   align-items: center;
 }
@@ -18,17 +17,22 @@ section .header {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  max-width: 50ch;
+  max-width: 70ch;
   /* border: 1px solid red; */
 }
 
+section > div > .main {
+  width: 100%;
+  max-width: 1000px;
+}
+
 section .header p {
-  max-width: 60ch;
+  /* max-width: 60ch; */
   margin-inline: auto;
 }
 
 .acc_head {
-  background: var(--secondary) !important;
+  background: var(--secondary-light) !important;
 }
 
 .acc_content,
@@ -64,6 +68,26 @@ section .header p {
   background: rgba(0, 0, 0, 0.5);
   mix-blend-mode: multiply;
 } */
+
+.numberlist {
+  counter-reset: item;
+}
+
+.numberlist > *:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  margin-left: -1em;
+}
+
+.autoscroll {
+  animation: autoscroll 10s linear infinite alternate-reverse;
+}
+
+@keyframes autoscroll {
+  to {
+    /* transform: translateX(-100%); */
+  }
+}
 
 @media only screen and (min-width: 900px) {
   /* section .header {

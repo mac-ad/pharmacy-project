@@ -106,7 +106,7 @@ const insertHeader = () => {
     </label>
     <ul class="desktop-nav-list">
       <li>
-        <a href="/index.html#home">Home</a>
+        <a href="/index.html#hero">Home</a>
       </li>
       <li>
         <a href="/about.html">About</a>
@@ -117,6 +117,9 @@ const insertHeader = () => {
       <li>
         <a href="/register.html">register</a>
       </li>
+      <li>
+      <a href="/index.html#organizing-commitee">Organizing Committee</a>
+    </li>
       <li>
         <a href="/faq.html">FAQs</a>
       </li>
@@ -150,6 +153,9 @@ const insertHeader = () => {
     </li>
     <li>
       <a href="/register.html">register</a>
+    </li>
+    <li>
+      <a href="/index.html#organizing-commitee">Organizing Committee</a>
     </li>
     <li>
       <a href="/faq.html">FAQs</a>
@@ -233,3 +239,22 @@ insertFooter();
 const navbar = document.querySelector(".desktop-nav-list");
 
 console.log(navbar);
+
+const autoScrollContainer = document.querySelectorAll(".autoscroll");
+
+autoScrollContainer.forEach((container) => {
+  let scrolled = 0;
+  const canScroll = container.scrollWidth;
+
+  console.log(canScroll);
+
+  autoScrollInterval = setInterval(() => {
+    scrolled += 10;
+    console.log(scrolled);
+    container.scrollLeft += 100;
+  }, 3000);
+
+  // container.addEventListener("mouseover", (e) => {
+  //   clearInterval(autoScrollInterval);
+  // });
+});

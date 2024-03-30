@@ -1,3 +1,8 @@
+section#schedule {
+  padding: 8em 0;
+  /* border: 1px solid red; */
+}
+
 section#schedule > div {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,6 +17,7 @@ section#schedule img {
   section#schedule > div {
     grid-template-columns: 1fr 2fr;
     gap: 2em;
+    align-items: flex-start;
   }
 
   section#schedule .main {

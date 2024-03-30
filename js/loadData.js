@@ -29,4 +29,26 @@ async function insertSpeakers() {
     });
 }
 
+async function insertOrganizingCommittee() {
+  fetch("../data/committee.json")
+    .then((res) => res.json())
+    .then((members) => {
+      const container = document.querySelector("#organizing-commitee .list");
+      members.forEach((member) => {
+        const div = document.createElement("div");
+        div.classList.add("card");
+        div.innerHTML = `
+      <img src="${member.img}" alt="" />
+      <div class="details">
+        <h3 class="name">${member.name}</h3>
+        <p class="designation">${member.designation}</p>
+      </div>
+      `;
+        container.appendChild(div);
+      });
+    });
+}
+
 // insertSpeakers();
+
+insertOrganizingCommittee();
