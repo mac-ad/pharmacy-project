@@ -547,7 +547,6 @@ footer {
 
 .speaker-card {
   overflow: hidden;
-  border-radius: 5px;
   height: 100%;
   position: relative;
   border: 1px solid var(--secondary-light);
@@ -570,11 +569,11 @@ footer {
   color: var(--white);
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
+  opacity: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -582,7 +581,7 @@ footer {
 }
 
 .speaker-card:hover .content {
-  transform: translateY(0);
+  opacity: 1;
 }
 .speaker-card .content .name {
   font-size: 1.2rem;
