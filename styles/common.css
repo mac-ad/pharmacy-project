@@ -12,6 +12,11 @@ section > div {
   align-items: center;
 }
 
+a.link {
+  color: rgb(0, 174, 255);
+  text-decoration: underline;
+}
+
 section .header {
   text-align: center;
   display: flex;
