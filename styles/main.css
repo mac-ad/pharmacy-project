@@ -637,6 +637,7 @@ footer {
   align-items: start;
   scroll-behavior: smooth;
   user-select: none;
+  width: fit-content;
 }
 
 #organizing-commitee .list::-webkit-scrollbar {
@@ -645,7 +646,7 @@ footer {
 
 #organizing-commitee .card {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1em;
   align-items: flex-start;
   flex-direction: row;
@@ -655,6 +656,8 @@ footer {
   background: rgba(128, 128, 128, 0.173);
   border: 1px solid rgba(255, 255, 255, 0.087);
   height: 100%;
+  flex-basis: 0;
+  min-width: 300px;
 }
 
 #organizing-commitee .card img {
@@ -683,7 +686,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
   #organizing-commitee .card {
-    justify-content: center;
+    align-items: center;
     width: fit-content;
   }
 }
