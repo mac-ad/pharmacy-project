@@ -677,11 +677,13 @@ footer {
 #organizing-commitee .card .details h3 {
   font-weight: 500;
   font-size: 1.1rem;
+  text-transform: capitalize;
 }
 
 #organizing-commitee .card .details p {
   opacity: 0.6;
-  font-size: var(--fs-xs);
+  text-transform: capitalize;
+  font-size: 0.9rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -709,6 +711,10 @@ footer {
   .hero h1 {
     font-size: 2.5rem;
   }
+}
+
+li {
+  white-space: nowrap;
 }
 
 @media only screen and (min-width: 1000px) {
