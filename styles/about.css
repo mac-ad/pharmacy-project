@@ -1,0 +1,91 @@
+section#about {
+  padding: 8em 0;
+}
+
+section#about .main {
+  margin-top: 2em;
+}
+
+section#about .main {
+  display: grid;
+  gap: 0.5em;
+  grid-template-areas:
+    "main" "nepal" "ku" "department" "forum"
+    "ipsf" "ipsdAsia";
+}
+
+section#about .main > * {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 2em 1em;
+  /* border-radius: 5px; */
+  background: var(--secondary-opacity);
+  border: 1px solid var(--secondary-light);
+}
+
+section#about p {
+  max-width: 60ch;
+  text-align: center;
+  margin-inline: auto;
+  line-height: 1.5;
+}
+
+section#about-secondary {
+  margin-top: -8em;
+}
+
+section#about > div > .info-container {
+  margin-top: 3em;
+}
+
+section#about .info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.info-container.main-content {
+  grid-area: main;
+}
+
+.info-container.nepal {
+  grid-area: nepal;
+}
+
+.info-container.ku {
+  grid-area: ku;
+}
+
+.info-container.department {
+  grid-area: department;
+}
+
+.info-container.forum {
+  grid-area: forum;
+}
+
+.info-container.ipsf {
+  grid-area: ipsf;
+}
+
+.info-container.ipsdAsia {
+  grid-area: ipsdAsia;
+}
+
+@media only screen and (min-width: 800px) {
+  section#about .main {
+    grid-template-areas:
+      "main main main main"
+      "nepal nepal ku ku" "forum forum forum forum"
+      "department department department department"
+      "ipsf ipsf ipsdAsia ipsdAsia";
+  }
+
+  section#about .main > * {
+    width: 100%;
+  }
+
+  section#about .main > * p {
+    max-width: 90ch;
+  }
+}

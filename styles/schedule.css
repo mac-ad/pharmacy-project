@@ -1,0 +1,26 @@
+section#schedule {
+  padding: 8em 0;
+  /* border: 1px solid red; */
+}
+
+section#schedule > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4em;
+}
+
+section#schedule img {
+  filter: invert(1) brightness(0.8);
+}
+
+@media only screen and (min-width: 1000px) {
+  section#schedule > div {
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  section#schedule .main {
+    border: 2px solid rgba(255, 255, 255, 0.377);
+  }
+}

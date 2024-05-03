@@ -1,0 +1,92 @@
+[
+  {
+    "img": "images/GPPed_TEAM/Chairperson/Samriddhi Acharya.jpg",
+    "name": "Samriddhi Acharya",
+    "designation": "Chairperson"
+  },
+  {
+    "img": "images/GPPed_TEAM/Vice Chairperson/Bini Khimbaja.jpg",
+    "name": "Bini Khimbaja",
+    "designation": "Vice chairperson"
+  },
+  {
+    "img": "images/GPPed_TEAM/Event co-ordinators/Prakriti Bhattarai.jpg",
+    "name": "Prakriti Bhattarai",
+    "designation": "Coordinator"
+  },
+  {
+    "img": "https://i.pravatar.cc/600",
+    "name": "Saurab Sharma",
+    "designation": "coordinator"
+  },
+  {
+    "img": "images/GPPed_TEAM/Secretaries/Dikshya Khatiwada.jpg",
+    "name": "Dikshya Khatiwada",
+    "designation": "Secretary"
+  },
+  {
+    "img": "images/GPPed_TEAM/Secretaries/Shreya Sapkota.png",
+    "name": "Shreya Sapkota",
+    "designation": "Secretary"
+  },
+  {
+    "img": "images/GPPed_TEAM/Treasurers/Pabitra Thapa Magar.jpg",
+    "name": "Pabitra Thapa Magar",
+    "designation": "Treasurer"
+  },
+  {
+    "img": "images/GPPed_TEAM/Treasurers/Anisha Shakya Bajracharya.jpg",
+    "name": "Anisha Shakya Bajracharya",
+    "designation": "Treasurer"
+  },
+  {
+    "img": "images/GPPed_TEAM/Media and Marketing Team/Leads/jasmine.jpg",
+    "name": "Jasmin thapa magar",
+    "designation": "Media and marketing lead"
+  },
+  {
+    "img": "images/GPPed_TEAM/Media and Marketing Team/Leads/Bipana Pokhrel.jpg",
+    "name": "Bipana pokhrel",
+    "designation": "Media and marketing lead"
+  },
+  {
+    "img": "images/GPPed_TEAM/Logistics Team/Leads/Kriti Acharya.png",
+    "name": "Kriti acharya",
+    "designation": "Logistic lead"
+  },
+  {
+    "img": "images/GPPed_TEAM/Logistics Team/Leads/kalyan.jpg",
+    "name": "Kalyan krishna ranjit",
+    "designation": "Logistic lead"
+  },
+  {
+    "img": "images/GPPed_TEAM/Sponsorship Team/Leads/pinki.jpg",
+    "name": "Pinki kumari sah",
+    "designation": "Sponsorship lead"
+  },
+  {
+    "img": "https://i.pravatar.cc/300",
+    "name": "Sworup Gholizu",
+    "designation": "Sponsorship lead"
+  },
+  {
+    "img": "https://i.pravatar.cc/300",
+    "name": "Pramesh shrestha",
+    "designation": "Design lead"
+  },
+  {
+    "img": "images/GPPed_TEAM/Design Team/Leads/Sumina.jpg",
+    "name": "Sumina bajracharya",
+    "designation": "Design lead"
+  },
+  {
+    "img": "images/GPPed_TEAM/Volunteer Coordinators/Nasira.jpg",
+    "name": "Nasira miya",
+    "designation": "Volunteer coordinator"
+  },
+  {
+    "img": "https://i.pravatar.cc/800",
+    "name": "Bibek sahi",
+    "designation": "Volunteer coordinator"
+  }
+]
