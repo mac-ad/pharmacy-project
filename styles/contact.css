@@ -1,0 +1,32 @@
+section#contact {
+  padding: 8em 0;
+  /* border: 1px solid red; */
+}
+
+section#contact .title {
+  text-align: center;
+}
+
+section#contact .title:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section#contact .main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+}
+
+section#contact .main > * {
+  border: 1px solid red;
+}
+
+section#contact .info {
+  height: 200px; /* this line is to be removed accordingly*/
+}
+
+section#contact .map {
+  height: 400px; /* this line is to be removed accordingly*/
+}

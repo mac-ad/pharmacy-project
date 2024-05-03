@@ -128,7 +128,7 @@ const insertHeader = () => {
         <a href="gallary.html">Gallary</a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </li>
     </ul>
   </nav>
@@ -163,7 +163,7 @@ const insertHeader = () => {
       <a href="gallary.html">Gallary</a>
     </li>
     <li>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
     </li>
   </ul>
 </div>
