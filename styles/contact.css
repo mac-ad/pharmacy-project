@@ -1,32 +1,55 @@
-section#contact {
-  padding: 8em 0;
-  /* border: 1px solid red; */
+/* Adjusted CSS for Contact Page */
+
+/* Title Alignment */
+section#contact .header {
+  position: relative;
 }
 
 section#contact .title {
   text-align: center;
+  margin-top: 3em; /* Add margin above the title */
 }
 
-section#contact .title:before {
-  left: 50%;
-  transform: translateX(-50%);
+/* Main Adjustments */
+section#contact {
+  padding: 2em 0;
 }
 
 section#contact .main {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin-top: 3em;
-}
-
-section#contact .main > * {
-  border: 1px solid red;
+  margin-top: 2em;
 }
 
 section#contact .info {
-  height: 200px; /* this line is to be removed accordingly*/
+  display: grid;
+  gap: 1em;
 }
 
+.contact-box {
+  background-color: #1e1e1e; /* Dark background color */
+  color: #2ecc71; /* Text color combination of green and blue */
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.contact-name {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Contact Person Details */
+.contact-details {
+  margin: 0.5em 0;
+  /* Apply gradient text color */
+  background: linear-gradient(to right, #87ceeb, #2ecc71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Google Map Adjustment */
 section#contact .map {
-  height: 400px; /* this line is to be removed accordingly*/
+  margin: auto;
+  width: 100%; /* Set the width to 100% */
 }
