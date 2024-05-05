@@ -705,6 +705,79 @@ footer {
   }
 }
 
+
+
+
+/* organizaing Subcommittee */
+
+#organizing-subcommitee .list {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+  margin-inline: auto;
+  align-items: start;
+  scroll-behavior: smooth;
+  user-select: none;
+  width: fit-content;
+}
+
+#organizing-subcommitee .list::-webkit-scrollbar {
+  display: none;
+}
+
+#organizing-subcommitee .card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 1em;
+  border-radius: 2px;
+  width: 100%;
+  background: rgb(26, 26, 26);
+  border: 1px solid rgba(255, 255, 255, 0.087);
+  height: 100%;
+  flex-basis: 0;
+  min-width: 300px;
+}
+
+#organizing-subcommitee .card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#organizing-subcommitee .card .details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  white-space: nowrap;
+}
+
+#organizing-subcommitee .card .details h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+#organizing-subcommitee .card .details p {
+  opacity: 0.6;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 600px) {
+  #organizing-subcommitee .card {
+    align-items: center;
+    width: fit-content;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   footer {
     flex-direction: row;

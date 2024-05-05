@@ -199,7 +199,7 @@ const insertFooter = () => {
       </svg>
     </div>
     <span class="footer-item__title"> Date </span>
-    <p>Jan 18-20,2024</p>
+    <p>20-22 September, 2024</p>
   </div>
   <div class="footer-item">
     <div class="icon">
@@ -211,7 +211,7 @@ const insertFooter = () => {
       </svg>
     </div>
     <span class="footer-item__title"> Location </span>
-    <p>Kathmandu, Nepal</p>
+    <p>Kathmandu University, Dhulikhel, Nepal</p>
   </div>
   <div class="footer-item">
     <div class="icon">
@@ -223,7 +223,7 @@ const insertFooter = () => {
       </svg>
     </div>
     <span class="footer-item__title"> Speakers </span>
-    <p>80+ Int. Speaker</p>
+    <p>5+ Int. Speakers</p>
   </div>
 </footer>
   `;
